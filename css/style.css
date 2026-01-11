@@ -38,7 +38,7 @@ ul li {
     font-size: 18px;
     font-weight: 500;
     color: var(--white-color);
-    background: #032E15;
+    background: var(--primary);
     background: linear-gradient(180deg,rgba(3, 46, 21, 1) 0%, rgba(1, 102, 48, 1) 100%);
     transition: all ease .2s;
 }
@@ -48,12 +48,12 @@ ul li {
 h1 {
     font-size: 56px;
     font-weight: 700;
-    color: #032E15;
+    color: var(--primary);
 }
 h2 {
     font-size: 36px;
     font-weight: 600;
-    color: #032E15;
+    color: var(--primary);
 }
 /* Global CSS Ends Here */
 
@@ -62,9 +62,24 @@ h2 {
     --primary-font-size : 16px;
     --link-color: #162456;
     --hover-color: #016630;
-    --dropdown-bg: #032E15;
-    --white-color: #fff;
+    --primary: #032E15;
+    --white-color: #ffffff;
     --honeydew: #f0fdf4;
+    --seajasper: #64977c;
+    --hintred: #f9f9f9;
+    --ashgray: #aec3b8;
+    --nutmegwood: #653B09;
+    --accentjasper: #679a7e;
+    --luxurygreen: #0D542B;
+    --mattelight: #B8B8B8;
+    --viridiangreen: #658774;
+    --trendydark: #2a6343;
+    --lightgreen: #658573;
+    --elephant: #919798;
+    --spacegray: #6F7577;
+    --boldgray: #666666;
+    --black: #000000;
+    --purelinen: #FEF3E4;
     --text-center: center;
 }
 /* Site Variables Ends Here */
@@ -126,7 +141,7 @@ h2 {
 }
 .main-menu ul ul li {
     display: block;
-     background: var(--dropdown-bg);
+    background: var(--primary);
 }
 .main-menu ul ul a {
     padding: 12px 16px;
@@ -134,7 +149,7 @@ h2 {
 }
 .main-menu ul ul a:hover {
     color: var(--honeydew);
-    background-color: #016630;
+    background-color: var(--hover-color);
 }
 .site-header .menu-toggle {
     display: none;
@@ -147,7 +162,7 @@ h2 {
     display: block;
     width: 26px;
     height: 3px;
-    background: #032E15;
+    background: var(--primary);
     margin: 5px 0;
     transition: all 0.3s ease;
 }
@@ -182,11 +197,11 @@ h2 {
 .banner-caption .trust-badge {
     border: 0.5px solid #9aaea8;
     padding: 8px 17px;
-    background: #032E15;
+    background: var(--primary);
     background: linear-gradient(180deg, rgba(82, 119, 108, 1) 0%, rgba(82, 151, 122, 1) 100%);
     font-size: 16px;
     font-weight: 300;
-    color: #fff;
+    color: var(--white-color);
     border-radius: 20px;
     margin: 0 0 22px;
     max-width: 356px;
@@ -210,7 +225,7 @@ h2 {
     display: inline-block;
     font-size: 72px;
     font-weight: 700;
-    color: #679a7e;
+    color: var(--accentjasper);
     margin: 0 24px 0 0;
     width: 26.446%;
 }
@@ -225,7 +240,7 @@ h2 {
     display: block;
     font-size: 22px;
     font-weight: 300;
-    color: #0D542B;
+    color: var(--luxurygreen);
 }
 .caption-container .shop-cta {
     display: inline-block;
@@ -292,14 +307,14 @@ h2 {
     bottom: 30px;
 }
 .swiper-pagination .swiper-pagination-bullet {
-    border: 1px solid #032e15;
+    border: 1px solid var(--primary);
     background-color: transparent;
     opacity: 1;
     transition: all ease .2s;
 }
 .swiper-pagination .swiper-pagination-bullet-active,
 .swiper-pagination .swiper-pagination-bullet:hover {
-    background-color: #032E15;
+    background-color: var(--primary);
 }
 .our-products .product-desc {
     max-width: 610px;
@@ -321,36 +336,36 @@ h2 {
 .prod-rating span {
     font-size: 13px;
     font-weight: 300;
-    color: #032E15;
+    color: var(--primary);
 }
 .about-product p {
     margin: 0;
     font-size: 16px;
     font-weight: 300;
-    color: #032E15;
+    color: var(--primary);
     text-align: justify;
 }
 .popular-prod .prod-detail {
     padding: 20px 17px 27px 22px;
     border-width: 0 1px 1px 1px;
     border-style: solid;
-    border-color: #B8B8B8;
+    border-color: var(--mattelight);
     border-radius: 0 0 16px 16px;
     margin: 0 0 11px 0;
 }
 .popular-prod h3 {
     margin: 0;
     text-align: var(--text-center);
-    background: #032E15;
+    background: var(--primary);
     background: linear-gradient(90deg,rgba(0, 201, 80, 1) 0%,rgba(0, 130, 54, 1) 52%,rgba(3, 46, 21, 1) 100%);
     border-radius: 7px 7px 0 0;
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
+    color: var(--white-color);
     padding: 9px 0;
     border-width: 1px 1px 0 1px;
     border-style: solid;
-    border-color: #B8B8B8;
+    border-color: var(--mattelight);
 }
 .prod-detail .prod-heading {
     display: flex;
@@ -361,7 +376,7 @@ h2 {
     cursor: pointer;
     font-size: 20px;
     font-weight: 300;
-    color: #032E15;
+    color: var(--primary);
 }
 .custom-radio input[type="radio"] {
   display: none;
@@ -380,17 +395,17 @@ h2 {
   transition: all 0.2s ease;
 }
 .prod-block .custom-radio:has(input:checked) {
-  color: #658774;
+  color: var(--viridiangreen);
 }
 .custom-radio input[type="radio"]:checked + .radio-mark {
-    border-color: #658573;
+    border-color: var(--lightgreen);
 }
 .custom-radio input[type="radio"]:checked + .radio-mark::after {
   content: "";
   width: 9px;
   height: 9px;
-  background: #64977c;
-  border: 1px solid #2a6343;
+  background: var(--seajasper);
+  border: 1px solid var(--trendydark);
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -404,14 +419,14 @@ h2 {
     margin: 0 10px 0 0;
 }
 .prod-amount del {
-    color: #b8b8b8;
+    color: var(--mattelight);
     font-weight: 300;
     margin: 0;
 }
 .prod-detail hr {
     border-width: 1px 0 0;
     border-style: solid;
-    border-color: #919798;
+    border-color: var(--elephant);
     max-width: 525px;
     margin: 12px auto 19px 30px;
 }
@@ -423,7 +438,7 @@ h2 {
     margin: 0 0 15px;
     font-size: 16px;
     font-weight: 300;
-    color: #032E15;
+    color: var(--primary);
 }
 .opt-variety .prod-row {
     display: flex;
@@ -432,7 +447,7 @@ h2 {
     max-width: 405px;
 }
 .prod-row .prod-block {
-    background-color: #F9F9F9;
+    background-color: var(--hintred);
     border-radius: 16px;
     padding: 9px 8px 17px 8px;
     flex-basis: 31.36%;
@@ -441,7 +456,7 @@ h2 {
 }
 .prod-block label {
     cursor: pointer;
-    color: #919798;
+    color: var(--elephant);
     font-size: 13px;
     font-weight: 300;
     display: block;
@@ -452,7 +467,7 @@ h2 {
     margin: 0 auto;
 }
 .prod-block .radio-mark {
-    border-color: #919798;
+    border-color: var(--elephant);
     width: 10px;
     height: 10px;
     margin: 0 7px 0 0;
@@ -462,7 +477,7 @@ h2 {
     width: 5px;
     height: 5px;
     border: 0;
-    background-color: #aec3b8;
+    background-color: var(--ashgray);
     top: 1.8px;
     left: 1.8px;
 }
@@ -474,10 +489,10 @@ h2 {
     right: 3px;
     font-size: 7px;
     font-weight: 700;
-    color: #fff;
+    color: var(--white-color);
     padding: 2px 5px;
     border-radius: 5px 0 5px 0;
-    background: #032E15;
+    background: var(--primary);
     background: linear-gradient(90deg, rgba(3, 46, 21, 1) 0%, rgba(1, 102, 48, 1) 100%);
 }
 .prod-detail .opt-include {
@@ -490,7 +505,7 @@ h2 {
     flex-basis: 30.926%;
 }
 .prod-row .offer-block {
-    border: 1px solid #B8B8B8;
+    border: 1px solid var(--mattelight);
     border-radius: 6px;
     padding: 8px 11px 32px;
 }
@@ -498,14 +513,14 @@ h2 {
     margin: 0 0 11px;
     font-size: 16px;
     font-weight: 300;
-    color: #6F7577;
+    color: var(--spacegray);
 }
 .offer-block img {
     display: block;
     margin: 0 auto;
 }
 .offer-block strong {
-    color: #032E15;
+    color: var(--primary);
     font-weight: 700;
 }
 .opt-include .offer-block {
@@ -530,7 +545,7 @@ h2 {
     letter-spacing: 0.9px;
     line-height: 21px;
     text-align: justify;
-    color: #032E15;
+    color: var(--primary);
     position: relative;
     z-index: 1;
 }
@@ -614,7 +629,7 @@ h2 {
     font-size: 20px;
     font-weight: 700;
     line-height: 30px;
-    color: #032E15;
+    color: var(--primary);
 }
 .accordion .acc-desc {
     padding: 24px;
@@ -624,7 +639,7 @@ h2 {
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
-    color: #666666;
+    color: var(--boldgray);
 }
 .accordion .acc-desc {
   max-height: 0;
@@ -674,10 +689,10 @@ h2 {
 
 /* Feature Strip Starts Here */
 .feature-strip {
-    background: #032E15;
+    background: var(--primary);
     background: linear-gradient(180deg, rgba(3, 46, 21, 1) 0%, rgba(1, 102, 48, 1) 100%);
     padding: 56px 0;
-    color: #fff;
+    color: var(--white-color);
 }
 .feature-strip .container {
     max-width: 1120px;
@@ -747,13 +762,13 @@ h2 {
     font-size: 12px;
     font-weight: 300;
     line-height: 19px;
-    color: #666;
-    border-bottom: 1px solid #666666;
+    color: var(--boldgray);
+    border-bottom: 1px solid var(--boldgray);
     padding: 38px 0 29px;
     transition: all ease .2s;
 }
 .feature-table tbody tr td {
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid var(--boldgray);
 }
 .feature-table tbody tr td {
     padding: 18px 0 15px;
@@ -762,7 +777,7 @@ h2 {
     text-align: left;
     font-size: 16px;
     font-weight: 700;
-    color: #666;
+    color: var(--boldgray);
     padding: 0 0 0 15px;
 }
 .feature-table thead tr th.highlight {
@@ -770,11 +785,11 @@ h2 {
 }
 .feature-table thead tr th.highlight,
 .feature-table tbody tr td.highlight {
-    background-color: #F0FDF4;
+    background-color: var(--honeydew);
 }
 .feature-table thead tr th.highlight {
     font-size: 20px;
-    color: #000;
+    color: var(--black);
 }
 .feature-table thead tr th.highlight img {
     margin: 0 auto 7px;
@@ -792,7 +807,7 @@ h2 {
 
 /* Site Footer Starts Here */
 .site-footer {
-    background-color: #032E15;
+    background-color: var(--primary);
     padding: 75px 0 94px;
 }
 .site-footer .container {
@@ -820,7 +835,7 @@ h2 {
 }
 .quick-links ul li a {
     margin: 0;
-    color: #fff;
+    color: var(--white-color);
     font-family: "Oxanium", sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -840,7 +855,7 @@ h2 {
     font-size: 16px;
     font-weight: 700;
     line-height: 150%;
-    color: #FEF3E4;
+    color: var(--purelinen);
     margin: 0 0 20px;
 }
 .footer-widget form {
@@ -848,9 +863,9 @@ h2 {
 }
 .footer-widget input {
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid var(--white-color);
     font-size: 16px;
-    color: #fff;
+    color: var(--white-color);
     padding: 12px;
     outline: none;
     min-width: 69%;
@@ -859,20 +874,20 @@ h2 {
     font-weight: 300;
 }
 .footer-widget input::-webkit-input-placeholder {
-   color: #fff;
+    color: var(--white-color);
 }
 .footer-widget input:-moz-placeholder {
-   color: #fff;
+    color: var(--white-color);
 }
 .footer-widget input::-moz-placeholder {
-   color: #fff;
+    color: var(--white-color);
 }
 .footer-widget input:-ms-input-placeholder {  
-   color: #fff;
+    color: var(--white-color);
 }
 .footer-widget button {
-    background-color: #653B09;
-    color: #fff;
+    background-color: var(--nutmegwood);
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 700;
     line-height: 150%;
@@ -882,20 +897,20 @@ h2 {
     transition: all ease .2s;
 }
 .footer-widget button:hover {
-    background-color: #679a7e;
+    background-color: var(--accentjasper);
 }
 .footer-widget p {
     margin: 0;
     font-family: "Oxanium", sans-serif;
     font-size: 12px;
     font-weight: 300;
-    color: #fff;
+    color: var(--white-color);
     line-height: 150%;
 }
 .footer-widget p a {
     margin: 0;
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
     text-decoration: underline;
 }
 .footer-widget p a:hover {
@@ -991,7 +1006,7 @@ h2 {
         top: 100%;
         left: 0;
         width: 100%;
-        background: #679a7e;
+        background: var(--accentjasper);
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease;
@@ -1008,7 +1023,7 @@ h2 {
     .main-menu ul li a {
         display: block;
         padding: 14px 20px;
-        color: #fff;
+        color: var(--white-color);
     }
     .main-menu ul ul {
         position: static;
@@ -1016,7 +1031,7 @@ h2 {
         transform: none;
         padding: 0;
         display: none;
-        background: #f9f9f9;
+        background: var(--hintred);
     }
     .main-menu ul li.open > ul {
         display: block;
@@ -1055,7 +1070,7 @@ h2 {
         font-size: 52px;
     }
     .feature-list ul li span {
-        color: #fff;
+        color: var(--white-color);
         font-size: 18px;
     }
     .our-products .container {
