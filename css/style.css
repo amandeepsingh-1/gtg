@@ -526,7 +526,7 @@ h2 {
 .opt-include .offer-block {
     display: inline-block;
     flex-basis: 60.741%;
-    text-align: center;
+    text-align: var(--text-center);
 }
 .opt-include .offer-block h5 {
     margin: 0 0 34px;
